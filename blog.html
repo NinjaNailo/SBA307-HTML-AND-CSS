@@ -3,10 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jenai Gaza • Posts</title>
     <link rel="stylesheet" href="style.css">
+     <style> 
+   .note { background: #fff9e6; border: 1px solid #ffe6a3; padding: 10px; border-radius: 6px; }
+</style>
 </head>
 <body>
-    
+  <header>
+    <div class="container">
+        <h1 style="margin:0;">Jenai Gaza Blog</h1>
+        <nav>
+            <a href="index.html">Home </a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="subscribe">Subscribe</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section class="card fade-in">
+        <h2>Blog Posts</h2>
+        <form action="#" method="get">
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+            <option value="all">All</option>
+            <option value="My Journey">My Journey</option>
+            <option value="career">Career</option>
+        </select>
+        <input type="q   id="q" name="q" placeholder="Search keywords">
+    <label for="q">Search</label>
+    <input type="text" id="q" name="q" placeholder="Search keywords">
+    <button type="submit">Filter</button> 
+</form>
+</section>
+<section class="card flex-1">
+    <img src="https://images.pexels.com/photos/3861952/pexels-photo-3861952.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Working at computer" style="width:100%;border-radius:6px;">
+    <h3>My Journey</h3>
+    <p>Ways to stay motivated</p>
+</section>
+<section class="card flex-1">
+    <!-- GIF -->
+    <img src="https://media.giphy.com/media/QW74u7Yy6h9tS/giphy.gif" alt="Celebration gif" style="width:100%;border-radius:6px;">
+    <h3>Celebrate Small Wins</h3>
+    <p>How to ace your next interview</p>
+    <p>Tracking the small wins keeps the momentum strong.</p>
+</section>
+    <h2>Publishing Schedule (Table)</h2>
+    <p class="note">This table shows a weekly plan.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>My Journey</td>
+            <tr>
+                <td>1</td>
+                <td>My Journey</td>
+                <td>Personal Growth</td>
+                <td>Published</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Celebrate Small Wins</td>
+                <td>Career</td>
+                <td>Published</td>
+            </tr>
+       </tbody>     
+<footer id="subscribe">
+<footer id="subscribe">
+    <div class="container">
+        <h3>Subscribe</h3>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <label for="topics">Topics you like</label>
+            <select id="topics" name="topics" required>
+                <option value="">Choose one..</option>
+                <option>Health and Wellness</option>
+                <option>Overcoming Obstacles</option>
+                <option>Personal Growth</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>© <span id="year"></span> Jenai Gaza</p>
+    </div>
+</footer>       
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
